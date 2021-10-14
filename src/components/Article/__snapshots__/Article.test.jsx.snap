@@ -1,0 +1,26 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Article component renders a single article 1`] = `
+<DocumentFragment>
+  <div>
+    <img
+      alt="Best article ever"
+      src="http://placeholder.com/villager"
+    />
+    <h2>
+      Best article ever
+    </h2>
+    <h4>
+      This is beyond a great article so insightful
+    </h4>
+    <p>
+      test testerson
+    </p>
+    <a
+      href="www.test.com"
+    >
+      View Article
+    </a>
+  </div>
+</DocumentFragment>
+`;
