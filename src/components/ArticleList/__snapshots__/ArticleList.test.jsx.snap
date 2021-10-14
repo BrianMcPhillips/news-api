@@ -1,0 +1,52 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ArticleList component renders an article list 1`] = `
+<DocumentFragment>
+  <ul>
+    <li>
+      <div>
+        <img
+          alt="Best article ever"
+          src="http://placeholder.com/villager"
+        />
+        <h2>
+          Best article ever
+        </h2>
+        <h4>
+          This is beyond a great article so insightful
+        </h4>
+        <p>
+          test testerson
+        </p>
+        <a
+          href="www.test.com"
+        >
+          View Article
+        </a>
+      </div>
+    </li>
+    <li>
+      <div>
+        <img
+          alt="Second best article ever"
+          src="http://placeholder.com/villager"
+        />
+        <h2>
+          Second best article ever
+        </h2>
+        <h4>
+          This is a another great article so insightful
+        </h4>
+        <p>
+          test testerson the third
+        </p>
+        <a
+          href="www.test2.com"
+        >
+          View Article
+        </a>
+      </div>
+    </li>
+  </ul>
+</DocumentFragment>
+`;
