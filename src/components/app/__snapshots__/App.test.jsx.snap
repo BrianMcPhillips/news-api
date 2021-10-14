@@ -2,30 +2,9 @@
 
 exports[`App component renders App 1`] = `
 <DocumentFragment>
-  <div
-    data-testid="allArticles"
-  >
-    <div>
-      <form>
-        <label
-          for="input"
-        >
-          Search News Articles
-        </label>
-        <input
-          id="input"
-          name="input"
-          type="text"
-          value=""
-        />
-        <button
-          data-testid="search-button"
-        >
-          Find Articles
-        </button>
-      </form>
-    </div>
-    <ul />
-  </div>
+  <img
+    alt="Loading"
+    src="https://www.animatedimages.org/data/media/152/animated-newspaper-image-0026.gif"
+  />
 </DocumentFragment>
 `;
