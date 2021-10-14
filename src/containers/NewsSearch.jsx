@@ -10,14 +10,14 @@ export default class NewsSearch extends Component {
   
   componentDidMount = async() => {
     const input = 'bitcoin';
-    getArticles(input) 
+    getArticles(input)
       .then(articleList => this.setState({ articles: articleList }));
   }
-  
+
   render() {
     const { articles } = this.state;
     return (
-      <div>
+      <div data-testid="allArticles">
         <ArticleList articles={articles} />
       </div>
     );
