@@ -12,7 +12,7 @@ const Search = ({ searchTerm, onChange, onSubmit }) => (
         value={searchTerm} 
         onChange={onChange} 
       />
-      <button>Find Articles</button>
+      <button data-testid="search-button">Find Articles</button>
     </form>
   </div>
 );
