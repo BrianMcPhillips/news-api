@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import ArticleList from '../components/ArticleList/ArticleList';
 import Search from '../components/Search/Search';
+import Loading from '../components/Loading/Loading';
 import { getArticles } from '../services/news-api';
 
 
@@ -8,13 +9,14 @@ import { getArticles } from '../services/news-api';
 export default class NewsSearch extends Component {
   state = {
     articles: [],
-    searchTerm: ''
+    searchTerm: '',
+    loading: true
   }
   
   componentDidMount = async() => {
     const input = 'bitcoin';
     getArticles(input)
-      .then(articleList => this.setState({ articles: articleList }));
+      .then(articles => this.setState({ articles, loading: false }));
   }
 
   handleChange = ({ target }) => {
@@ -24,12 +26,13 @@ export default class NewsSearch extends Component {
   handleSubmit = e => {
     e.preventDefault();
     getArticles(this.state.searchTerm)
-      .then(articleList => this.setState({ articles: articleList }));
+      .then(articles => this.setState({ articles, loading: false }));
     
   }
 
   render() {
-    const { articles, searchTerm } = this.state;
+    const { articles, searchTerm, loading } = this.state;
+    if(loading) return <Loading />;
     return (
       <div data-testid="allArticles">
         <Search 
